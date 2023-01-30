@@ -1,8 +1,5 @@
 # syntax=docker/dockerfile:1
-FROM ubuntu
-RUN apt-get update
-RUN apt-get install -y python3.8
-
+FROM python:3.8-slim-buster
 
 WORKDIR /app
 
